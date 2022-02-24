@@ -3,9 +3,8 @@ import 'package:intl/intl.dart';
 import 'package:purple_expenses/models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
-  const (List<Transaction> transactions, { Key? key }) : super(key: key);
 
-  final List<Transaction> transactions;
+  List<Transaction> transactions;
 
   TransactionList(this.transactions, {Key? key}) : super(key: key);
 
