@@ -4,8 +4,10 @@ import 'package:purple_expenses/models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
   List<Transaction> transactions;
+  final void Function(String) onDelete;
 
-  TransactionList(this.transactions, {Key? key}) : super(key: key);
+  TransactionList(this.transactions, this.onDelete, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +65,10 @@ class TransactionList extends StatelessWidget {
                     subtitle: Text(
                       DateFormat('d MMM y').format(transaction.date),
                     ),
+                    trailing: IconButton(
+                        icon: Icon(Icons.delete),
+                        onPressed: () => onDelete(transaction.id),
+                        color: Colors.grey),
                   ),
                 );
               }),
