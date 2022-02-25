@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class TransactionForm extends StatefulWidget {
   final void Function(String, double) onSubmit;
@@ -11,14 +12,30 @@ class TransactionForm extends StatefulWidget {
 
 class _TransactionFormState extends State<TransactionForm> {
   String title = '';
-
   double value = 0.0;
+  DateTime selectedDate = DateTime.now();
 
   _submitForm() {
     if (title.isEmpty || value <= 0) {
       return;
     }
     widget.onSubmit(title, value);
+  }
+
+  _showDatePicker() {
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2020),
+      lastDate: DateTime.now(),
+    ).then((pickedDate) {
+      if (pickedDate == null) {
+        return;
+      }
+      setState(() {
+        selectedDate = pickedDate;
+      });
+    });
   }
 
   @override
@@ -43,12 +60,24 @@ class _TransactionFormState extends State<TransactionForm> {
                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                   onSubmitted: (_) => _submitForm(),
                   decoration: InputDecoration(labelText: 'Valor')),
-              TextButton(
-                  onPressed: _submitForm,
-                  child: Text(
-                    'Nova transação',
-                    style: TextStyle(color: Colors.purple),
-                  ))
+              Container(
+                height: 70,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                          'Data: ${DateFormat('dd/MM/yyyy').format(selectedDate)}'),
+                    ),
+                    TextButton(
+                        onPressed: _showDatePicker,
+                        child: Text('Selecione uma data',
+                            style: TextStyle(
+                                color: Theme.of(context).colorScheme.primary)))
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                  onPressed: _submitForm, child: Text('Nova transação'))
             ],
           ),
         ));
