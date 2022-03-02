@@ -25,14 +25,14 @@ class PurpleExpenses extends StatelessWidget {
           secondary: Colors.deepPurpleAccent,
         ),
         textTheme: tema.textTheme.copyWith(
-          headline6: TextStyle(
+          headline6: const TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           titleTextStyle: TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 20,
@@ -40,13 +40,13 @@ class PurpleExpenses extends StatelessWidget {
           ),
         ),
       ),
-      home: MyHomePage(title: 'Purple Expenses'),
+      home: const MyHomePage(title: 'Purple Expenses'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<Transaction> get _recentTransactions {
     return _transactions.where((tr) {
-      return tr.date.isAfter(DateTime.now().subtract(Duration(days: 7)));
+      return tr.date.isAfter(DateTime.now().subtract(const Duration(days: 7)));
     }).toList();
   }
 
@@ -164,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ? Container()
                 : FloatingActionButton(
                     onPressed: () => _openTransactionFormModal(context),
-                    child: Icon(Icons.add),
+                    child: const Icon(Icons.add),
                   ),
             floatingActionButtonLocation:
                 FloatingActionButtonLocation.centerFloat,

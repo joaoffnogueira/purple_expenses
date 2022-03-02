@@ -6,15 +6,15 @@ import 'package:purple_expenses/components/adaptative_textfield.dart';
 class TransactionForm extends StatefulWidget {
   final void Function(String, double, DateTime) onSubmit;
 
-  TransactionForm(this.onSubmit, {Key? key}) : super(key: key);
+  const TransactionForm(this.onSubmit, {Key? key}) : super(key: key);
 
   @override
   State<TransactionForm> createState() => _TransactionFormState();
 }
 
 class _TransactionFormState extends State<TransactionForm> {
-  TextEditingController _titleController = TextEditingController();
-  TextEditingController _valueController = TextEditingController();
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _valueController = TextEditingController();
   DateTime selectedDate = DateTime.now();
 
   _submitForm() {
@@ -48,7 +48,7 @@ class _TransactionFormState extends State<TransactionForm> {
                 AdaptativeTextField(
                     controller: _valueController,
                     keyboardType:
-                        TextInputType.numberWithOptions(decimal: true),
+                        const TextInputType.numberWithOptions(decimal: true),
                     onSubmitted: (_) => _submitForm(),
                     label: 'Valor'),
                 AdaptativeDatePicker(
