@@ -18,6 +18,7 @@ class PurpleExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Purple Expenses',
       theme: tema.copyWith(
         colorScheme: tema.colorScheme.copyWith(
