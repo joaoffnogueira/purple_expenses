@@ -9,7 +9,13 @@ Made with Flutter, based on Material Design, this app can be deployed for Androi
 
 # Descrição
 
-Feito com Flutter, baseado em Material Design, este aplicativo pode ser lançado para Android e iOS. Ele inclui uma visualização de página “sobre” e oferece maneiras de os usuários se comunicarem com o escritório de advocacia (como WhatsApp, E-mail) e links para as redes sociais (como LinkedIn, site da Tahech Advogados). O aplicativo também é integrado ao Firebase, e usa o serviço Firebase Cloud Messaging para receber notificações push, que podem ser links de marketing do escritório ou materiais jurídicos gratuitos para clientes. Já está disponível no Google Play. Versão para iOS em breve.
+Cadastre suas despesas e acompanhe as variações ao longo da semana!
+Purple expenses permite que você tenha um controle simples dos seus gastos semanais, exibindo os valores em um gráfico de barras representandos as despesas em cada dia da última semana.
+
+Nenhum dado é enviado para ser armazenado na nuvem, você tem controle total sobre suas informações!
+
+Versão beta!
+Aplicativo de código aberto! Consulte o site para enviar issues, fazer contribuições ou criar seu próprio fork.
 
 # Screenshots
 
