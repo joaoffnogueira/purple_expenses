@@ -27,7 +27,7 @@ Este projeto aplica atualmente os seguintes recursos: Null Safety com Flutter 2;
 
 # Screenshots
 
-<img src="https://joaonogueira.dev/img/tsfadv.app.webp" height=300vh>
+<img src="https://joaonogueira.dev/img/purple_expenses.webp" height=300vh>
 
 
 # Tech Used
