@@ -27,16 +27,11 @@ Este projeto aplica atualmente os seguintes recursos: Null Safety com Flutter 2;
 
 # Screenshots
 
-<img src="https://play-lh.googleusercontent.com/fxKSGaB94R3ptKcbt7JgoHCmyHdfT4VnFe1YuKkKyNepWbo--BsQ8sYm49kMBQyiJg=w720-h310-rw" width=19%>
-<img src="https://play-lh.googleusercontent.com/AHSZgsEc-Snm7e0mpTjhEgr9jf-d7Uom6ajpxYuw-0SY8ORZGYnztt9hD2SEcl0z6m5I=w720-h310-rw" width=19%>
-<img src="https://play-lh.googleusercontent.com/7_NbLzryJiAzw1bWY45TXG4Ia4CY9604zidlQGjZ7trrlgSsYQ3uVgilF_uZqbRNmT4=w720-h310-rw" width=19%>
-<img src="https://play-lh.googleusercontent.com/5SLauVYSCf78mL49-cmaU94t7MiiQmmwzw5eBQkrCVib6pNK73oa8jDvJJXXQC0U83tv=w720-h310-rw" width=19%>
-<img src="https://play-lh.googleusercontent.com/nhzvk8Ca5KZW3hNPwHnte7KxWJMJpzN2XHWzOb0OgAwbs8AHNPfJI0D23VnNVPwGCZNL=w720-h310-rw" width=19%>
+<img src="https://play-lh.googleusercontent.com/fxKSGaB94R3ptKcbt7JgoHCmyHdfT4VnFe1YuKkKyNepWbo--BsQ8sYm49kMBQyiJg=w720-h310-rw" width=19%> <img src="https://play-lh.googleusercontent.com/AHSZgsEc-Snm7e0mpTjhEgr9jf-d7Uom6ajpxYuw-0SY8ORZGYnztt9hD2SEcl0z6m5I=w720-h310-rw" width=19%> <img src="https://play-lh.googleusercontent.com/7_NbLzryJiAzw1bWY45TXG4Ia4CY9604zidlQGjZ7trrlgSsYQ3uVgilF_uZqbRNmT4=w720-h310-rw" width=19%> <img src="https://play-lh.googleusercontent.com/5SLauVYSCf78mL49-cmaU94t7MiiQmmwzw5eBQkrCVib6pNK73oa8jDvJJXXQC0U83tv=w720-h310-rw" width=19%> <img src="https://play-lh.googleusercontent.com/nhzvk8Ca5KZW3hNPwHnte7KxWJMJpzN2XHWzOb0OgAwbs8AHNPfJI0D23VnNVPwGCZNL=w720-h310-rw" width=19%>
 
 # Tech Used
 
-<img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white">
-<img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white">
+<img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white"><img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white">
 
 [<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height=100vh>](https://play.google.com/store/apps/details?id=dev.joaonogueira.purple_expenses)
 
